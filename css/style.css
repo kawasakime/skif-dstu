@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    display: flex;
+    -webkit-align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list:hover .list-ico {
+    border-width: 1px;
+}
+
+.list-ico {
+    width: 6px;
+    height: 6px;
+    border-left: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    transform: rotate(-45deg);
+    margin-left: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-weight: 300;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li:hover {
+    text-shadow: 0.5px 0 0 black;
+    text-decoration: underline;
+}
+
+.social {
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+}
+
+#instagram {
+    height: 30px;
+    width: 30px;
+}
+
+#vk {
+    width: 40px;
+    height: 40px;
+    margin: 0 7px 0 10px;
+}
+
+#telegram {
+    width: 34px;
+    height: 34px;
+}
+
+.slider {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 60px;
+    width: 370px;
+    color: white;
+    background-color: #005EAE;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.china {
+    width: 220px;
+    background-color: #AE0000;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 65px 0;
+}
+
+.info .title {
+    color: #525252;
+    font-size: 18px;
+}
+
+.info-list-btns {
+    height: 100%;
+}
+
+.info-list-btns ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 16px;
+    color: #525252;
+}
+
+.info-list-btns li {
+    cursor: pointer;
+}
+
+.info-list-btns li:nth-child(2) {
+    margin: 0 30px;
+}
+
+.info-list-btns li:hover {
+    text-shadow: 0.5px 0 0 black;
+    text-decoration: underline;
+}
