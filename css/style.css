@@ -90,6 +90,17 @@ nav li:hover {
     height: 34px;
 }
 
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 1000px;
+    background-color: #005EAE;
+    /* border-radius: 2px; */
+}
+
 .slider {
     width: 100%;
     margin: 20px 0;
@@ -112,6 +123,11 @@ nav li:hover {
     font-size: 16px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover, .social > *:hover{
+    opacity: .8;
 }
 
 .china {
