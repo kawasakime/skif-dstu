@@ -11,28 +11,72 @@
 
 <body>
   <header>
-    <a href="index.html" class="logo"><img src="img/Logo.png" alt=""></a>
-    <nav>
-      <ul>
-        <li><a href="">Электронные курсы ДГТУ</a></li>
-        <li><a href="">Массовые открытые онлайн-курсы</a></li>
-        <li><a href="">Новости</a></li>
-        <li><a href="" class="list">О нас <div class="list-ico"></div></a></li>
-      </ul>
-    </nav>
-    <div class="social">
-      <a href="#"><img src="img/inst.png" alt="" id="instagram"></a>
-      <a href="#"><img src="img/vk.png" alt="" id="vk"></a>
-      <a href="#"><img src="img/telegram.png" alt="" id="telegram"></a>
+    <div class="container">
+      <div class="logo__container">
+        <div class="line"></div>
+        <a href="index.html" class="logo"><img src="img/Logo.png" alt=""></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Электронные курсы ДГТУ</a></li>
+          <li><a href="">Массовые открытые онлайн-курсы</a></li>
+          <li><a href="">Новости</a></li>
+          <li class="about-us-btn">
+            <a href="" class="list">О нас <div class="list-ico"></div></a>
+            <ul class="about-us">
+              <li><a href="">Начальство</a></li>
+              <li><a href="">Отдел автоматизации образовательной деятельности</a></li>
+              <li><a href="">Отдел организации и внедрения онлайн обучения</a></li>
+              <li><a href="">Отдел сопровождения дистанционного образования</a></li>
+              <hr>
+              <li><a href="">Этапы развития</a></li>
+              <li><a href="">Наши проекты</a></li>
+              <li><a href="">Наши партнеры</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="social">
+          <a href="#"><img src="img/inst.png" alt="" id="instagram"></a>
+          <a href="#"><img src="img/vk.png" alt="" id="vk"></a>
+          <a href="#"><img src="img/telegram.png" alt="" id="telegram"></a>
+        </div>
+        <div class="burger">
+          <div class="burger-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="burger-menu"></div>
+        </div>
+      </nav>
     </div>
-    <div class="line"></div>
   </header>
   <main>
     <div class="container">
       <div class="slider">
-        <img src="img/slide1.png" alt="">
+        <div class="slider__container">
+          <div class="slider__item active-slide">
+            <img src="img/slide1.png" alt="">
+          </div>
+          <div class="slider__item">
+            <img src="img/slide2.png" alt="">
+            <div class="slide-text slide-2">Иновационные образовательные технологии</div>
+          </div>
+          <div class="slider__item">
+            <img src="img/slide3.png" alt="">
+            <div class="slide-text slide-3">Независимая оценка знаний студентов</div>
+          </div>
+          <div class="slider__item">
+            <img src="img/slide4.png" alt="">
+            <div class="slide-text slide-4">Дистанционное обучение</div>
+          </div>
+          <div class="slider__item">
+            <img src="img/slide5.png" alt="">
+            <div class="slide-text slide-5">Видеоконференции и вебинары</div>
+          </div>
+        </div>
         <div class="switches">
-          <div class="switch active"></div>
+          <div class="switch active-switch"></div>
           <div class="switch"></div>
           <div class="switch"></div>
           <div class="switch"></div>
@@ -48,11 +92,57 @@
         <div class="title-skif">Электронная информационно-образовательная среда ДГТУ</div>
         <div class="info-list-btns">
           <ul>
-            <li class="list">Студенту <div class="list-ico"></div>
+            <li class="list student-info-btn">Студенту <div class="list-ico"></div>
+             <ol class="open-info student-info">
+              <li class="t-info"><span>Электронное обучение</span></li>
+              <li><a href="">Библиотека электронных ресурсов ДГТУ</a></li>
+              <li><a href="">Материалы для заочников</a></li>
+              <li><a href="">Олимпиады и конкурсы ДГТУ</a></li>
+              <li><a href="">Открытое образование</a></li>
+              <li><a href="">Массовые открытые онлайн курсы</a></li>
+              <li><a href="">Оценка качества образовательных услуг</a></li>
+              <hr>
+              <li class="t-info"><span>Повышение публикационной активности</span></li>
+              <li><a href="">Блокнот молодого ученого</a></li>
+              <li><a href="">Международный и итоговый контроль</a></li>
+              <hr>
+              <li class="t-info"><span>Тестирование</span></li>
+              <li><a href="">Междисциплинарные экзамены</a></li>
+              <li><a href="">Промежуточный и итоговый контроль</a></li>
+              <li><a href="">Электронные курсы ДГТУ</a></li>
+              <li><a href="">Учебный процесс</a></li>
+              <li><a href="">Расписание занятий</a></li>
+              <li><a href="">Школа лидерства ДГТУ</a></li>
+             </ol> 
             </li>
-            <li class="list">Школьнику <div class="list-ico"></div>
+            <li class="list schoolchild-info-btn">Школьнику <div class="list-ico"></div>
+              <ol class="open-info schoolchild-info">
+                <li><a href="">Детский университет</a></li>
+                <li><a href="">Конкурсы и олимпиады ДГТУ</a></li>
+                <li><a href="">Библиотека электронных ресурсов</a></li>
+              </ol>
             </li>
-            <li class="list">Сотруднику <div class="list-ico"></div>
+            <li class="list employee-info-btn">Сотруднику <div class="list-ico"></div>
+              <ol class="open-info employee-info">
+                <li><a href="">Бланки и документы</a></li>
+                <li><a href="">Онлайн-график тестирований</a></li>
+                <li><a href="">Онлайн-график видеозаписи лекций</a></li>
+                <hr>
+                <li><span>Электронное обучение</span></li>
+                <li><a href="">Библиотека электронных ресурсов ДГТУ</a></li>
+                <li><a href="">Открытое образование</a></li>
+                <li><a href="">Массовые открытые онлайн-курсы</a></li>
+                <li><a href="">Оценка качества образовательных услуг</a></li>
+                <li><a href="">Электронные курсы ДГТУ</a></li>
+                <li><a href="">Электронная поддержка обучения</a></li>
+                <hr>
+                <li><span>Проекты</span></li>
+                <li><a href="">Портфолио преподавателя ДГТУ</a></li>
+                <li><a href="">Учебно-методический комплекс дисциплин ДГТУ</a></li>
+                <li><a href="">Центр научно-методического обеспечения образовательных программ</a></li>
+                <li><a href="">Школа лидерства ДГТУ</a></li>
+                <li><a href="">Эффективный контракт. Рейтинг преподавателя ДГТУ</a></li>
+              </ol>
             </li>
           </ul>
         </div>
@@ -160,6 +250,7 @@
     <p> (863) 273-84-73<br>
       skif@donstu.ru</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
