@@ -720,6 +720,19 @@ footer {
   .slide-text {
     font-size: 18px;
   }
+  .skif-mag {
+    padding-bottom: 20px;
+  }
+  footer {
+    height: auto;
+    flex-direction: column-reverse;
+    font-size: 14px;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  footer > *:nth-child(2) {
+    margin-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 750px) {
