@@ -1,7 +1,11 @@
 'use strict'
 
 const slides = [...document.querySelectorAll('.slider__item')],
-      switches = [...document.querySelectorAll('.switch')]
+      switches = [...document.querySelectorAll('.switch')],
+      burgerBtn = document.querySelector('.burger-btn'),
+      burgerMenu = document.querySelector('.burger-menu'),
+      aboutUsBtn = document.querySelector('.a-us'),
+      aboutUsB = document.querySelector('.burger-about-us');
 
 let currentSlide = 0
 
@@ -23,6 +27,15 @@ switches.map((e, i) => {
     showSlide()
   })
 })
+
+burgerBtn.addEventListener('click', () => {
+  burgerMenu.classList.toggle('visible')
+});
+
+aboutUsBtn.addEventListener('click', () => {
+  console.log('lol')
+  aboutUsB.classList.toggle('about-us-visible')
+});
 
 function showSlide() {
   slides.map(e => {e.classList.remove('active-slide')})

@@ -7,6 +7,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -45,6 +49,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   height: 100%;
+  /* z-index: 20; */
 }
 
 .logo img {
@@ -568,7 +573,6 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  /* position: absolute; */
   right: 30px;
   top: 70px;
 }
@@ -579,6 +583,80 @@ footer {
   height: 6px;
   background: #005EAE;
   border-radius: 2px;
+  z-index: 200;
+}
+
+.burger-menu {
+  width: 80vw;
+  position: absolute;
+  right: 0;
+  background: white;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  visibility: hidden;
+  right: -80vw;
+  transition: .3s;
+}
+
+.visible {
+  visibility: visible;
+  right: 0;
+}
+
+.burger-menu a {
+  position: relative;
+  font-size: 18px;
+  height: 50px;
+  border-top: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: white;
+}
+
+.burger-menu a:hover {
+  background: #c1e2ff;
+}
+
+.burger-menu > *:not(ul) {
+  z-index: 5;
+}
+
+.burger-menu .bg-top {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background: white;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.burger-about-us {
+  position: relative;
+  top: -100%;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  /* height: 0; */
+  visibility: hidden;
+  transition: top .3s;
+  z-index: 1;
+}
+
+.about-us-visible {
+  visibility: visible;
+  top: 0;
+}
+
+.burger-about-us li {
+  margin: 0;
+  padding: 0 10px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -651,9 +729,16 @@ footer {
   }
 
   nav {
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
     height: auto;
     flex-direction: row;
     align-items: center;
+    z-index: 19;
   }
 
   nav > ul {
@@ -667,21 +752,25 @@ footer {
   header .container {
     display: flex;
     flex-direction: column-reverse;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
   .info {
+    position: relative;
     margin-bottom: 20px;
   }
-  .slide-text {
-    font-size: 15px;
-    padding: 10px 15;
+  .info-list-btns li {
+    position: static;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .slide-text {
-    font-size: 13px;
-    padding: 6px 12px;
+  .open-info {
+    width: 100%;
+    left: 0;
+  }
+  .slider {
+    display: none;
+  }
+  header {
+    padding-top: 55px;
+    margin-bottom: 20px;
   }
 }
 
