@@ -709,7 +709,12 @@ footer {
   }
   .links {
     margin-top: 20px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .links-block {
+    width: 100%;
   }
   .links-block:nth-child(2) {
     margin-top: 20px;
