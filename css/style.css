@@ -757,6 +757,7 @@ footer {
     flex-direction: row;
     align-items: center;
     z-index: 19;
+    box-shadow: 0 0px 4px rgb(207, 218, 228);
   }
 
   nav > ul {
@@ -770,7 +771,6 @@ footer {
   header .container {
     display: flex;
     flex-direction: column-reverse;
-    /* padding-top: 20px; */
   }
   .info {
     position: relative;
@@ -787,7 +787,7 @@ footer {
     display: none;
   }
   header {
-    padding-top: 55px;
+    padding-top: 65px;
     margin-bottom: 20px;
   }
 }
