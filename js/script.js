@@ -30,6 +30,7 @@ switches.map((e, i) => {
 
 burgerBtn.addEventListener('click', () => {
   burgerMenu.classList.toggle('visible')
+  burgerBtn.classList.toggle('burger-close')
 });
 
 aboutUsBtn.addEventListener('click', () => {

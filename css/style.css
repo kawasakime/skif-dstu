@@ -386,9 +386,9 @@ nav li:hover {
   font-size: 20px;
   font-weight: 500;
   color: #2F2F2F;
+  padding: 0 16px;
 }
 
-.title,
 .descr {
   text-align: justify;
   padding: 0 16px;
@@ -567,14 +567,18 @@ footer {
 }
 
 .burger-btn {
+  position: relative;
   width: 45px;
   height: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  right: 30px;
-  top: 70px;
+  border: none;
+  background: white;
+  outline: none;
+  z-index: 200;
+  padding-right: 0;
 }
 
 .burger-btn div {
@@ -583,7 +587,7 @@ footer {
   height: 6px;
   background: #005EAE;
   border-radius: 2px;
-  z-index: 200;
+  transition: .3s;
 }
 
 .burger-menu {
@@ -607,16 +611,42 @@ footer {
   right: 0;
 }
 
+.burger-close {
+  transition: .3s;
+}
+
+.burger-close div {
+  position: absolute;
+}
+
+.burger-close div:nth-child(1) {
+  left: 0;
+  bottom: 50%;
+  transform: rotate(45deg);
+}
+
+.burger-close div:nth-child(3) {
+  right: 0;
+  bottom: 50%;
+  transform: rotate(-45deg);;
+}
+
+.burger-close div:nth-child(2) {
+  display: none
+}
+
 .burger-menu a {
   position: relative;
   font-size: 18px;
-  height: 50px;
+  /* min-height: 50px; */
   border-top: 1px solid #dfdfdf;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background: white;
+  padding: 15px 10px;
+  text-align: center;
 }
 
 .burger-menu a:hover {
@@ -692,6 +722,9 @@ footer {
     margin: 0 auto;
     margin-top: 20px;
   }
+  .skif-achievements .title {
+    text-align: left;
+  }
   .achievements {
     justify-content: center;
   }
@@ -705,7 +738,17 @@ footer {
     margin-bottom: 20px;
   }
   nav {
-    flex-direction: column-reverse;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  nav > ul li:nth-child(4) {
+    order: 3;
+  }
+  nav > ul li:nth-child(3) {
+    order: 4;
+  }
+  .social {
+    margin-top: 10px;
   }
   .links {
     margin-top: 20px;
@@ -738,6 +781,14 @@ footer {
   footer > *:nth-child(2) {
     margin-bottom: 5px;
   }
+  .new .title{
+    text-align: center;
+    font-size: 18px;
+  }
+  .request {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -745,7 +796,9 @@ footer {
     width: 100%;
     margin-top: 8px;
   }
-
+  nav, .social {
+    margin-top: 0;
+  }
   nav {
     position: fixed;
     background: white;
