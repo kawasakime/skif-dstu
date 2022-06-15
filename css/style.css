@@ -165,14 +165,25 @@ nav li:hover {
 
 .slide-text {
   position: absolute;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px 20px;
-  color: #005EAE;
+  /* background: rgba(255, 255, 255, 1); */
+  background: #005EAE;
+  padding: 15px 20px;
+  /* color: #005EAE; */
+  color: white;
   font-size: 22px;
   font-weight: 600;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  text-transform: uppercase;
 }
 
-.slide-2 {
+/* .slide-2 {
   left: 0;
   top: 30px;
 }
@@ -190,7 +201,7 @@ nav li:hover {
 .slide-5 {
   right: 0;
   bottom: 50px;
-}
+} */
 
 .switches {
   position: absolute;
