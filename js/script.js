@@ -38,6 +38,7 @@ burgerBtn.addEventListener('click', () => {
 aboutUsBtns.map((e, i) => {
   e.addEventListener('click', () => {
     aboutUsLists[i].classList.toggle('about-us-visible')
+    e.querySelector('.list-ico').classList.toggle('rotate')
   })
 })
 

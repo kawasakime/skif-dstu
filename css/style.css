@@ -396,7 +396,7 @@ footer {
   top: 0;
   display: flex;
   flex-direction: column;
-  padding: 65px 0;
+  padding: 60px 0;
   visibility: hidden;
   right: -80vw;
   transition: .3s;
@@ -456,7 +456,7 @@ footer {
 .burger-menu .bg-top {
   position: absolute;
   width: 100%;
-  height: 65px;
+  height: 60px;
   background: white;
   z-index: 5;
   top: 0;
@@ -472,6 +472,11 @@ footer {
   visibility: hidden;
   transition: top .3s;
   z-index: 1;
+}
+
+.rotate {
+  transition: .2s;
+  transform: rotate(135deg);
 }
 
 .z-i {
