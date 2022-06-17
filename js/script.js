@@ -4,14 +4,16 @@ const slides = [...document.querySelectorAll('.slider__item')],
       switches = [...document.querySelectorAll('.switch')],
       burgerBtn = document.querySelector('.burger-btn'),
       burgerMenu = document.querySelector('.burger-menu'),
-      aboutUsBtn = document.querySelector('.a-us'),
-      aboutUsB = document.querySelector('.burger-about-us');
+      aboutUsBtns = [...document.querySelectorAll('.a-us')],
+      aboutUsLists = [...document.querySelectorAll('.burger-about-us')];
 
 let currentSlide = 0
 
+showSlide()
+
 const sliderInterval = setInterval(() => {
   toggleSwitch()
-  if (currentSlide < 4)
+  if (currentSlide < 2)
     ++currentSlide
   else
     currentSlide = 0
@@ -33,10 +35,11 @@ burgerBtn.addEventListener('click', () => {
   burgerBtn.classList.toggle('burger-close')
 });
 
-aboutUsBtn.addEventListener('click', () => {
-  console.log('lol')
-  aboutUsB.classList.toggle('about-us-visible')
-});
+aboutUsBtns.map((e, i) => {
+  e.addEventListener('click', () => {
+    aboutUsLists[i].classList.toggle('about-us-visible')
+  })
+})
 
 function showSlide() {
   slides.map(e => {e.classList.remove('active-slide')})
