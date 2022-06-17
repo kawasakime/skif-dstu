@@ -409,6 +409,7 @@ footer {
 
 .burger-close {
   transition: .3s;
+  margin-bottom: -10px;
 }
 
 .burger-close div {
